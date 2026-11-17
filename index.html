@@ -4,34 +4,75 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>GeoMapMotion</title>
-<meta name="description" content="GeoMapMotion — animated map videos: country battles, versus by real data, maps over the centuries and empires over time.">
+<meta name="description" content="GeoMapMotion is a private desktop app that prepares animated map videos from public data and uploads them to the GeoMapMotion YouTube channel through the YouTube Data API.">
 <style>
   :root { color-scheme: light dark; }
-  body { margin: 0; min-height: 100vh; display: grid; place-items: center;
-         font: 17px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
-         background: #fafafa; color: #1d1f23; text-align: center; }
-  main { max-width: 620px; padding: 40px 20px; }
+  body { margin: 0; font: 17px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+         background: #fafafa; color: #1d1f23; }
+  main { max-width: 760px; margin: 0 auto; padding: 48px 20px 60px; }
+  header { text-align: center; }
   h1 { font-size: 40px; margin: 0 0 6px; letter-spacing: .02em; }
-  h1 span { color: #e3192e; }
-  p { margin: 10px 0; } a { color: #c8102e; }
-  .btn { display: inline-block; margin-top: 18px; padding: 11px 22px; border-radius: 10px;
+  h2 { font-size: 21px; margin: 32px 0 8px; }
+  p { margin: 10px 0; } a { color: #c8102e; } li { margin: 4px 0; }
+  .lead { font-size: 19px; }
+  .btn { display: inline-block; margin-top: 14px; padding: 11px 22px; border-radius: 10px;
          background: #e3192e; color: #fff; text-decoration: none; font-weight: 600; }
-  .muted { color: #6b7078; font-size: 14px; margin-top: 32px; }
+  .muted { color: #6b7078; font-size: 14px; }
+  hr { border: 0; border-top: 1px solid #ddd; margin: 40px 0; }
+  footer { text-align: center; margin-top: 40px; }
   @media (prefers-color-scheme: dark) { body { background: #111316; color: #e8eaed; }
-    .muted { color: #9aa0a8; } a { color: #ff6b77; } h1 span { color: #ff4d5e; } .btn { color: #fff; } }
+    .muted { color: #9aa0a8; } a { color: #ff6b77; } .btn { color: #fff; } hr { border-top-color: #2a2e34; } }
 </style>
 </head>
 <body>
 <main>
-  <h1>GeoMap<span>Motion</span></h1>
-  <p>Animated map videos: countries battle on a wheel of fortune, nations face off round after round
-    on real data, religions and borders change over the centuries, and empires rise and fall.</p>
-  <p>Анимированные карты: сражения стран на колесе фортуны, сравнения стран по реальным данным,
-    религии и границы сквозь века, взлёт и падение империй.</p>
-  <a class="btn" href="https://www.youtube.com/@GeoMapsMotion">Watch on YouTube</a>
-  <p class="muted">Videos are prepared with a private tool that publishes them to this channel
-    through the YouTube API. · <a href="privacy.html">Privacy Policy</a> ·
-    <a href="mailto:swyatoslawibrahimovic@gmail.com">swyatoslawibrahimovic@gmail.com</a></p>
+<header>
+  <h1>GeoMapMotion</h1>
+  <p class="lead">GeoMapMotion is a private desktop application that prepares animated map videos and
+    publishes them to the owner's YouTube channel GeoMapMotion.</p>
+  <a class="btn" href="https://www.youtube.com/@GeoMapsMotion">Watch GeoMapMotion on YouTube</a>
+</header>
+
+<h2>What the GeoMapMotion app does</h2>
+<p>The app runs only on its owner's own computer. It builds educational geography and history videos
+from public data (Wikipedia lists and tables, Natural Earth maps) and uploads the finished videos to
+one YouTube channel — the owner's own channel,
+<a href="https://www.youtube.com/@GeoMapsMotion">youtube.com/@GeoMapsMotion</a>. The videos are animated
+maps such as:</p>
+<ul>
+  <li>country battles decided on a wheel of fortune and by real statistics;</li>
+  <li>two countries compared round by round (economy, population, sport, nature);</li>
+  <li>maps of religions, languages and borders changing over the centuries;</li>
+  <li>empires growing and falling over 2,000 years.</li>
+</ul>
+
+<h2>Why it uses Google APIs</h2>
+<p>The app uses the YouTube Data API only to publish the owner's own videos to the owner's own channel:
+it uploads each finished video with its title, description and tags, adds its captions and thumbnail,
+and reads the channel's ID, title and handle to confirm that the right channel is connected. It does
+not access any other user's data, and it is not offered to the public — there are no user accounts
+and no sign-in on this website. How the data is handled is described in the
+<a href="privacy.html">Privacy Policy</a>.</p>
+
+<h2>What the app does not do</h2>
+<p>GeoMapMotion makes maps, flags, charts and text from public data. It does not create, edit, upload
+or publish images or videos of real people, and it never creates sexual, intimate or non-consensual
+imagery of anyone (no AI-generated non-consensual intimate imagery). It does not use Google user data
+for advertising, profiling or training AI models.</p>
+
+<hr>
+
+<h2>Приложение GeoMapMotion</h2>
+<p>GeoMapMotion — личное приложение владельца канала: работает на его компьютере, готовит анимированные
+ролики с картами из открытых данных (Википедия, Natural Earth) и через YouTube Data API публикует их
+только на его канал <a href="https://www.youtube.com/@GeoMapsMotion">GeoMapMotion</a>. Изображений
+реальных людей и интимного контента приложение не создаёт и не публикует; данные Google не используются
+для рекламы и обучения моделей. Подробнее — в <a href="privacy.html">политике конфиденциальности</a>.</p>
+
+<footer class="muted">
+  GeoMapMotion · <a href="privacy.html">Privacy Policy</a> ·
+  <a href="mailto:swyatoslawibrahimovic@gmail.com">swyatoslawibrahimovic@gmail.com</a>
+</footer>
 </main>
 </body>
 </html>
